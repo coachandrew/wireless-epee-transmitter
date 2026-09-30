@@ -10,6 +10,10 @@ does not yet read weapon contacts or transmit hit data. The electrical sensing
 method and ESP-NOW packet format must be agreed and validated before those
 features are implemented.
 
+Project decisions, constraints, open questions, and test results are recorded
+in [docs/PROJECT_RECORD.md](docs/PROJECT_RECORD.md). Add every material design
+change and bench result there before changing the prototype architecture.
+
 ## Target Hardware
 
 - Seeed Studio XIAO ESP32-C3
@@ -46,3 +50,9 @@ py -m platformio run --target upload --upload-port COMx
 
 The initial A/B-only prototype is for transport and timing experiments and is
 not competition-correct.
+
+## Safety
+
+Do not connect the weapon socket directly to ESP32-C3 pins. Do not connect this
+battery-powered prototype to mains-referenced equipment while it is attached to
+a fencer. Initial tests must use an isolated contact/resistance fixture.
