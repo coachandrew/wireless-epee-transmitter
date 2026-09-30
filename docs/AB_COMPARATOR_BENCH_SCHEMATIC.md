@@ -73,6 +73,16 @@ selected from measured rising and falling resistance thresholds.
 Verify the datasheet and package marking for the exact ordered part before
 wiring.
 
+> **Part-number warning:** STMicroelectronics `L6562N` (including parts marked
+> `ST CHN L6562N`) is not an MCP6562 and must not be used in this circuit. It is
+> a transition-mode power-factor-correction controller for offline power
+> supplies. The shared `6562` digits do not indicate compatibility.
+
+Order a part whose full manufacturer designation is **Microchip MCP6562**.
+For breadboarding, select its through-hole PDIP-8 package; for a PCB, an SOIC-8
+variant is suitable. Confirm the complete ordering code, supply range, output
+type, and pinout against the Microchip datasheet before purchase and wiring.
+
 | Pin | MCP6562 function | Prototype connection |
 |---:|---|---|
 | 1 | OUTA | XIAO D2 and optional R7 |
