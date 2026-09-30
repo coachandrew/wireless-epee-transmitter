@@ -14,6 +14,10 @@ Project decisions, constraints, open questions, and test results are recorded
 in [docs/PROJECT_RECORD.md](docs/PROJECT_RECORD.md). Add every material design
 change and bench result there before changing the prototype architecture.
 
+The initial protected A-B detector wiring and measurement procedure are in
+[docs/AB_COMPARATOR_BENCH_SCHEMATIC.md](docs/AB_COMPARATOR_BENCH_SCHEMATIC.md).
+It is an isolated bench prototype, not a competition-ready weapon circuit.
+
 ## Target Hardware
 
 - Seeed Studio XIAO ESP32-C3
