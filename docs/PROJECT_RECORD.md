@@ -261,6 +261,15 @@ evidence before selection.
 Automatic source fallback during a bout was rejected because one source could
 clear or overwrite the other source's hit state.
 
+### 2026-11-13: Separate weapon selection from hit-source selection
+
+Weapon selection remains foil, epee, or sabre. Hit source is a separate choice:
+wired or wireless. The first wireless combination is explicitly named
+**Wireless Epee**; wireless foil and sabre are out of scope. The FSM remains the
+scoring authority and continues its existing UART output to the matrix display.
+See `WIRELESS_EPEE_MODE_INTEGRATION_PLAN.md` for staged implementation and exit
+criteria.
+
 ## Open Questions
 
 1. Which exact comparator provides the required input range, propagation time,

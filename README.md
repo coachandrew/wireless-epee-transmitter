@@ -55,6 +55,9 @@ py -m platformio run --target upload --upload-port COMx
 The initial A/B-only prototype is for transport and timing experiments and is
 not competition-correct.
 
+The staged plan for integrating an explicit Wireless Epee mode into the FSM is
+in [docs/WIRELESS_EPEE_MODE_INTEGRATION_PLAN.md](docs/WIRELESS_EPEE_MODE_INTEGRATION_PLAN.md).
+
 ## Safety
 
 Do not connect the weapon socket directly to ESP32-C3 pins. Do not connect this
